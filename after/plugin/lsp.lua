@@ -48,4 +48,5 @@ lsp.set_preferences({
 	suggest_lsp_servers = false,
 })
 
-vim.diagnostic.disable()
+vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+-- vim.diagnostic.disable()
